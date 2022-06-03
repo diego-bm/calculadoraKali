@@ -9,7 +9,7 @@
 #
 # PARTE -> RAIZ
 #
-#
+# Será que comittou???
 
 raiz() {
     clear

@@ -5,8 +5,7 @@
 # Local: FATEC - Araraquara
 #
 # Este script executa as funções básicas de uma calculadora:
-# Soma, Subtração, Divisão e Multiplicação
-# Em breve com Potenciação
+# Soma, Subtração, Divisão, Multiplicação, Potenciação e Raíz Quadrada
 #
 # PARTE -> MENU
 #
@@ -20,8 +19,9 @@ mostrarAviso() {
 }
 
 menu(){
-    echo "        Calculadora Básica"
-    echo "  Operações apenas com inteiros"
+    echo "__________________________________"
+    echo "|       Calculadora Básica       |"
+    echo "| Operações apenas com inteiros  |"
     echo "|--------------------------------|"
     echo "| Escolha uma das opções abaixo: |"
     echo "|--------------------------------|"
@@ -33,7 +33,7 @@ menu(){
     echo "| 6) Raiz Quadrada               |"
     echo "| 7) Sair                        |"
     echo "|--------------------------------|"
-    echo "|--------------------------------|"
+    echo "|________________________________|"
 
     read opcao
     case $opcao in
@@ -44,9 +44,6 @@ menu(){
         3) . /home/kali/scripts/calculadora/operacoes/multiplicacao.sh ;;
         4) . /home/kali/scripts/calculadora/operacoes/divisao.sh ;;
         5) . /home/kali/scripts/calculadora/operacoes/potenciacao.sh ;;
-        # 6) echo "WIP" ;
-        #     mostrarAviso ;
-        #     menu ;;
         6) . /home/kali/scripts/calculadora/operacoes/raizQuadrada.sh ;;
         7) exit ;;
         *) echo "Opção Inexistente" ;
